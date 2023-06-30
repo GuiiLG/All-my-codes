@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&family=Open+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+.container {
+    display: flex;
+    height: 372px;
+    width: 900px;
+    background-color: hsl(244, 38%, 16%);
+    margin: auto;
+    margin-top: 90px;
+}
+img{
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    max-height: 500px;
+    color: purple;
+    position: relative;
+    
+    
+    
+
+
+}
+.text {
+    color: white;  
+    margin-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.get {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    
+
+}
+.purple {
+    color: hsl(277, 64%, 61%);
+    display: inline;
+}
+.discover {
+  font-size: 13px;  
+  text-align: left;
+  margin-right: 35px ;
+  color: hsla(0, 0%, 100%, 0.75);
+  
+}
+.lista  ul {
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-left: 20px;
+    text-align: left;
+}

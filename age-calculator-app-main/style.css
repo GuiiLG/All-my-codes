@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body {
+    background-color: hsl(0, 0%, 94%);
+    overflow: hidden;
+}
+main {
+    background-color: white;
+    height: 400px;
+    width: 600px;
+    border-radius:30px 30px 150px 30px;
+    margin: auto;
+    margin-top: 150px;
+    
+    
+}
+form {
+    position: absolute;
+    border: none;
+    background-color: white;
+    
+    
+}
+fieldset {
+    margin-left: 50px;
+    margin-top: 40px;
+    background-color: white;
+    border: none;
+}
+label {
+    outline: unset;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.589);
+    
+}
+.day {
+    margin-right: 120px;
+}
+.month {
+    margin-right: 100px;
+}
+input {
+    padding: 10px;
+    width: 90px;
+    margin-right: 50px;    
+    background-color: white;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+.result {
+    
+    height: 200px;
+    width: 400px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 50px;
+    position: absolute;
+}
+
+span {
+   color: hsl(259, 100%, 65%); 
+}
+button {
+    border-radius: 100%;
+    width: 55px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    cursor: pointer;
+    margin-bottom: -60px;
+    margin-left: 450px;
+}
+@media screen and (max-width: 600px) {
+    main {
+        width: 354px;
+        height: 500px;
+        margin-left: 20px;
+    }
+    fieldset {
+        margin-left: 35px;
+    }
+    .day {
+        margin-right:80px ;
+    }
+    .month {
+        margin-right: 60px;
+    }
+    .result {
+        width: 300px;
+        margin-top: 200px;
+        padding: 10px;
+        margin-left: 35px;
+        
+    }
+
+    button {
+        margin-left:160px ;
+        margin-top: 20px;
+    }
+    .content {
+        margin-left: -5px !important;
+    }
+    input {
+        margin-right: 10px;
+    }
+}

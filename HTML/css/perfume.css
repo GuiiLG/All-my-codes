@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    position: relative;
+    top: 240px;
+    
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    border-radius: 10%;
+   
+    background-color: white;
+    
+    
+}
+.text {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.PERF {
+    font-style: italic;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    padding: 15px;
+    
+    
+}
+.gabi {
+   padding: 15px;
+   font-size: 28px;
+}
+.main-text {
+    font-weight: 10;
+    padding: 15px;
+    line-height: 1.8;
+    font-size: 14px;
+    text-align: left;
+}
+.price {
+    color: rgba(3, 126, 54, 0.658);
+    font-weight: 1000;
+    padding: 15px;
+}
+button {
+    background-color: rgba(10, 80, 39, 0.699);
+    border-radius: 10%;
+    height: 50px;
+    width: 200px;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+img {
+    height: 400px;
+    width: 250px;
+    border-radius: 10%;
+}

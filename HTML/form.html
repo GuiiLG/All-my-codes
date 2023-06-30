@@ -1,0 +1,190 @@
+
+<!--ola salve
+-class
+-style
+-hidden
+-title
+-tabindex
+-id
+-data-*
+-contenteditable
+-em
+-div
+-br
+-li
+-ol(ordenada) ou  ul(desodernada)
+-blockquote
+-abbr
+-addres
+-dl
+-dt
+-code
+-pre
+-span
+-div 
+CSS
+-number
+-intenger
+-dimension
+percentagem
+lenght
+angle
+time 
+resolution
+position
+
+<img src="" alt="">
+<input type="text">
+<br><a href="http://google.com.br" target="_blank">Outra aba</a>
+<br>&nbsp; &nbsp;&nbsp;&nbsp; aaaa
+&lt;
+&gt;
+&amp;
+&quot; &quot;
+&apos;
+-->
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <style>
+    fieldset {
+        width: 25%;
+    }
+    input[type="radio"] {
+  display: none;
+}
+
+/* Define a aparência dos botões personalizados */
+label.radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Define a aparência dos círculos internos dos botões personalizados */
+label.radio:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+/* Define a aparência do círculo interno quando selecionado */
+input[type="radio"]:checked + label.radio:before {
+  background-color: #2196F3;
+  border-color: #2196F3;
+}
+
+/* Define a aparência da etiqueta do botão quando selecionado */
+input[type="radio"]:checked + label.radio {
+  color: #2196F3;
+}
+
+
+
+
+
+    </style>
+    <title>Como posicionar uma div do lado de outra</title>
+</head>
+<body>
+    <p>Olá</p>
+    <form action="">
+    <fieldset>
+        <legend> Cadastro</legend>
+           <label for="name" >Nome</label>    
+           <input id="name" type="text" required autocomplete="name" placeholder="Nome Completo"><br>
+           <br>
+           <label  for="email" >Email</label>
+           <input id="email" type="email" required maxlength="30" autocomplete="email" placeholder="Email">
+           <br>
+           <br>
+           <textarea name="" id="" cols="30" rows="10" placeholder="Mande sua mensagem"></textarea>
+        <br><label for="Carro">Cars</label>
+           <input list="Carros"
+                name="Carro"
+                id="Carro"
+                placeholder="Escolha"
+                type="text">
+           <datalist id="Carros">
+            <option value="Fusca">
+            <option value="Ferrari">
+
+        
+           </datalist>
+           <button>Enviar</button>
+    </fieldset>
+    
+ </form>
+
+
+ <input type="radio" name="opcao" value="opcao1">Opção 1<br>
+  <input type="radio" name="opcao" value="opcao2">Opção 2<br>
+  <input type="radio" name="opcao" value="opcao3">Opção 3
+
+  <input type="checkbox" name="opcao1" value="opcao1">Opção 1<br>
+  <input type="checkbox" name="opcao2" value="opcao2">Opção 2<br>
+  <input type="checkbox" name="opcao3" value="opcao3">Opção 3
+
+  <form>
+    <select name="opcoes">
+      <option value="opcao1">Opção 1</option>
+      <option value="opcao2">Opção 2</option>
+      <option value="opcao3">Opção 3</option>
+    </select>
+  </form>
+
+  <form action="/enviar" method="post">
+    <label for="opcao1">Opção 1:</label>
+    <input type="checkbox" name="opcao1" id="opcao1" value="opcao1">
+    <br>
+    <label for="opcao2">Opção 2:</label>
+    <input type="checkbox" name="opcao2" id="opcao2" value="opcao2">
+    <br>
+    <label for="opcao3">Opção 3:</label>
+    <input type="checkbox" name="opcao3" id="opcao3" value="opcao3">
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+  <br>
+  <button type="submit" name="avaliacao" value="1">1</button>
+  <button type="submit" name="avaliacao" value="2">2</button>
+  <button type="submit" name="avaliacao" value="3">3</button>
+  <button type="submit" name="avaliacao" value="4">4</button>
+  <button type="submit" name="avaliacao" value="5">5</button>
+  <br>
+  <label for="comentario">Deixe um comentário:</label>
+  <textarea name="comentario" id="comentario"></textarea>
+</form>
+
+<form action="/classificar-servico" method="post">
+    <label>Avalie o serviço:</label>
+    <br>
+    <label for="avaliacao1"><input type="radio" id="avaliacao1" name="avaliacao" value="1">1</label>
+    <label for="avaliacao2"><input type="radio" id="avaliacao2" name="avaliacao" value="2">2</label>
+    <label for="avaliacao3"><input type="radio" id="avaliacao3" name="avaliacao" value="3">3</label>
+    <label for="avaliacao4"><input type="radio" id="avaliacao4" name="avaliacao" value="4">4</label>
+    <label for="avaliacao5"><input type="radio" id="avaliacao5" name="avaliacao" value="5">5</label>
+    <br>
+    <label for="comentario">Deixe um comentário:</label>
+    <textarea name="comentario" id="comentario"></textarea>
+    <br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+<script src="JS/teste.js">
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write (p1.innerText)
+</script>
+</html>

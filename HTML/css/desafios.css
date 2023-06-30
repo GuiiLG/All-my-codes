@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* DESAFIO 1 
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue
+}
+header {
+    background-color: rgb(238, 10, 238); 
+    height: 10vh;   
+    
+    display: flex;
+
+}
+.logo {
+    
+    align-items: center;
+    float : left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.main {
+    margin-right: 50px;
+    margin-left: 900px;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    margin-right: .8rem;
+    
+}
+.menu:nth-child(5) {
+    margin-left: 10px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    color: white;
+}
+
+DESAFIO 2
+* {
+    margin: 0;
+  }
+  main {
+    margin: 20px;
+    height: 1000px;
+    width: 90%;
+    border: 1px solid black;
+    display: flex;;
+  }
+  .menor {
+    margin: 1rem;
+    width: 25%;
+    border: 1px solid black;
+    height: 950px;
+  }
+  .maior {
+    margin: 1rem;
+    width: 75%;
+    border: 1px solid black;
+    height: 950px;
+  }
+ Desafio 3:
+  div {
+    margin: .8rem;
+    height: 200px ;
+    width: 400px;
+    border: solid 1px black;;
+    display: inline-block;
+  }
+  main {
+    display: inline-block;
+  }
+ também pode ser feito assim : 
+display: flex;
+flex-wrap:wrap;
+gap: .8rem; 
+
+Desafio 4:
+img {
+  height: 20px;
+  width: 20px;
+}
+button {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(173, 90, 250, 0.945);
+  border: none;
+  line-height: 0;
+}
+Desafio 5:
+body {
+  display: flex;
+  min-height: 100vh; (sinceramente eu n entendi como funciona mas serve para colocar o footer no final da pagina
+  e vh quer dizer q esta ocupando 100 porcento da tela ( viewport))
+}
+footer {
+  background-color: rgb(127, 84, 168);
+  margin-top: auto;
+  height: 8rem;
+  flex: 1; (preenche oq está faltando)
+  text-align: center;
+  padding: 50px;
+}
+*/

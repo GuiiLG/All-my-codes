@@ -1,0 +1,71 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.247);
+}
+main {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    display: flex;
+}
+/* orange */
+.orange {
+    
+    width: 300px;
+    background-color: hsl(31, 77%, 52%);
+}
+ .orange > h2 {
+    font-size: 32px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.orange > p {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: small;
+}
+.orange > button {
+    border: solid 1px white;
+    background-color: hsl(31, 77%, 52%); 
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.blue {
+    width: 300px;
+    background-color: hsl(184, 100%, 22%);
+}
+.blue > h2 {
+    font-size: 32px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.blue > p {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-right: 70px;
+    font-size: small;
+}
+.blue > button {
+    border: solid 1px white;
+    background-color: hsl(184, 100%, 22%); 
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.green {
+    width: 300px;
+   background-color:  hsl(179, 100%, 13%);
+}

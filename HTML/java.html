@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+<style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+ }
+  .roxo {
+    background-color: rgb(231, 206, 236);
+  }
+  .coral {
+    background-color: lightcoral;
+  }
+  button.normal {
+   
+    
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    background-color: darkorchid;
+    color: white;
+    
+    cursor: pointer;
+    
+  }
+ .diferente {
+  padding: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 50vh;
+   
+    cursor: pointer;
+    margin: auto;
+ }
+  
+</style>
+
+<body>
+
+  <body class="roxo">
+  <button class="normal" onclick="botao()"  >
+MUDAR TELA
+  </button>
+
+  <button class="diferente" >MUDOU</button>
+    
+  </body>
+  
+  <script >
+    const diferente = document.querySelector('.diferente');
+    diferente.style.display ='none';
+
+    const button = document.querySelector('button');
+  const body = document.querySelector('body');
+function botao() {
+  button.style.display = 'none';
+  body.classList.add('coral');
+  diferente.style.display = 'block';
+}
+document.addEventListener('keydown', function(event)
+{
+  const isKey = event.key == 'Escape'
+  if (isKey) {
+    body.classList.remove('coral')
+    diferente.style.display = 'none';
+    button.style.display = 'block';
+  }
+})
+  </script>
+  -->
+
+
+  <body>
+    <style>
+
+    </style>
+    Calculadora
+    <br>
+    <input type="number" class="n1"> +
+    <input type="number"  class="n2"> =  
+    <input type="button" class="somar" value="somar" >
+    <div class="resultado">O resultado</div>
+  </body>
+  <script>
+    const enviar = document.querySelector('.somar');
+    enviar.addEventListener('click', soma);
+    function soma() {
+      var n1 = document.querySelector(".n1")
+      var n2 = document.querySelector(".n2")
+      var resultado = document.querySelector(".resultado")
+      var number1 = Number(n1.value)
+      var number2 = Number(n2.value)
+      var sum = number1 + number2
+      resultado.innerHTML = ` O resultado é ${sum}`
+      document.write(sum)
+      window.alert("teste")
+
+    }
+  </script>
+</html>

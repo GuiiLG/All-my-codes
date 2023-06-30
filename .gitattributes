@@ -1,0 +1,2 @@
+*.exe filter=lfs diff=lfs merge=lfs -text
+HTML/IMG/WhatsAppSetup.exe filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/faq-accordion-card-main/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <img src="/faq-accordion-card-main/images/bg-pattern-desktop.svg" class="background">
+    <img src="/faq-accordion-card-main/images/illustration-woman-online-desktop.svg" class="woman" >
+    
+    <nav class="text">
+        <h1>FAQ</h1>
+      <div class="askQ" >
+        <div class="question" onclick="showAnswer(0)"> 
+          How many team members can I invite?           <strong><span style="color: orange;">⌵</span></strong>   
+        </div>
+        <div class="answer" onclick="disable(0)">
+          You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.
+        </div>
+<br>
+        <div class="question" onclick="showAnswer(1)">
+          What is the maximum file upload size? <strong><span style="color: orange;">⌵</span></strong>
+        </div>
+        <div class="answer"  onclick="disable(1)">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </div>
+<br>
+        <div class="question" onclick="showAnswer(2)">
+          How do I reset my password? <strong><span style="color: orange;">⌵</span></strong>
+        </div>
+        <div class="answer" onclick="disable(2)">
+          Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.
+        </div>
+<br>
+        <div class="question" onclick="showAnswer(3)">
+          Can I cancel my subscription? <strong><span style="color: orange;">⌵</span></strong>
+        </div>
+        <div class="answer" onclick="disable(3)">
+          Yes! Send us a message and we’ll process your request no questions asked.
+        </div>
+<br>
+        <div class="question" onclick="showAnswer(4)">
+          Do you provide additional support? <strong><span style="color: orange;">⌵</span></strong>
+        </div>
+        <div class="answer"  onclick="disable(4)">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </div>
+<br>
+      </div>
+
+    </nav>
+  
+  
+  </main>
+   
+  </main>
+   
+    
+  <img src="/faq-accordion-card-main/images/illustration-box-desktop.svg" class="arromba">
+  <script src="/faq-accordion-card-main/java.js"></script>
+</body>
+</html>

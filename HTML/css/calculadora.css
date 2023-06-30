@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+html {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+main {
+border: 2px solid white;
+width: 315px;
+height: 480px;
+margin: auto auto;
+margin-top: 60px;
+border-radius: 10px;
+position: relative;
+padding-bottom: 5px;
+}
+#resultado {
+border: 2px solid white;
+height: 60px;
+width: 300px;
+border-radius: 10px;
+position: absolute;
+right: 0;
+margin-top: 60px;
+left: 3px;
+background: none;
+color: white;
+text-align: right;
+font-size: 50px;
+
+
+}
+nav.operadores {
+height: 50px;
+width: 345px;
+display: inline-block;
+margin-right: 20px ;
+border-radius: 10px;
+margin-left: 50px;
+margin-top: 150px;
+
+
+}
+.limpar {
+    
+    height:70px;
+    width: 150px;
+    border-radius: 20px;
+    display: grid;
+    place-content: center;
+    margin: auto;
+    border: 2px solid white;
+    color: white ;
+    font-size: 40px;
+    font-weight: bold; 
+    background: none;
+}
+.limpar:hover {
+    background-color: white;
+    color: #a8eb12;
+    cursor: pointer;
+}
+.numbers {
+margin-top: 30px;
+}
+.mais, .vezes, .menos, .dividir, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero{
+height:70px;
+width: 70px;
+border-radius: 100%;
+display: grid;
+place-content: center;
+position: absolute;
+border: 2px solid white;
+color: white ;
+font-size: 40px;
+font-weight: bold; 
+cursor: pointer;
+
+}
+.four, .five, .six, .seven {
+margin-top: 15px;
+}
+.eight, .nine, .equal {
+margin-top: 50px !important;
+}
+.equal {
+height:70px;
+width: 150px;
+border-radius: 20px;
+display: grid;
+place-content: center;
+position: absolute;
+border: 2px solid white;
+color: white ;
+font-size: 40px;
+font-weight: bold; 
+}
+.mais {
+right: 0px;
+
+}
+.mais:hover, .menos:hover, .vezes:hover, .dividir:hover, .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover, .zero:hover, .equal:hover {
+background-color: white;
+color: #a8eb12;
+}
+.vezes {
+right: 80px;
+}
+.menos {
+right: 160px;
+}
+.dividir {
+right: 240px;
+}
+.three {
+right: 0;
+}
+.two {
+right: 80px;
+}
+.one {
+right: 160px;
+}
+.zero {
+right: 240px;
+}
+.seven {
+right: 0;
+top: 300px;
+}
+.six {
+right: 80px;
+top: 300px;
+}
+.five{
+right: 160px;
+top: 300px;
+}
+.four {
+right: 240px;
+top: 300px;
+}
+.equal {
+right: 0px;
+top: 350px;
+margin-top: 30px;
+cursor: pointer;
+}
+.nine {
+top: 350px;
+right: 160px;
+}
+.eight {
+top: 350px;
+right: 240px;
+}
+
+span {
+position: absolute;
+color: white;
+font-size: 30px;
+left: 75px;
+}
+

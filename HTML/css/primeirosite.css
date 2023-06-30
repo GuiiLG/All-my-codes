@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 0%);
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+main.one {
+    margin: auto;
+    margin-top:100px;
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    height: 330px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+
+}
+.all {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.star {
+    border-radius: 100%;
+    background-color: hsl(215, 21%, 23%);
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-content: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+.rating-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(215, 21%, 23%);
+    color:  hsl(216, 12%, 54%);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  h5 {
+    color:  hsl(216, 12%, 54%);
+    line-height: 1.6;
+  }
+  form {
+    margin-top: 20px;
+  }
+  button.submit {
+    height: 40px;
+    width: 240px;
+    display: grid;
+    place-content: center;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+    font-weight: 500;
+    cursor: pointer;    
+}
+  .rating-button:hover {
+    background-color: white;
+    color: orange;
+  }
+  button.submit:hover {
+    background-color: white;
+    color: orange;
+  }
+  main.two {
+    margin: auto;
+    margin-top:100px;
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    height: 330px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+
+}
+.selected {
+    color: orange;
+    background-color:hsl(215, 21%, 23%); ;
+    border-radius: 20px;
+    width: 180px;
+    padding: 15px;
+    margin-top: 10px;
+}
+h5.align {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.thanku{
+    padding-top: 30px;
+    margin-left: 60px;
+    
+}
+.tk {
+    margin-left: 35px;
+    margin-top: 10px;
+}

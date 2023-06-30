@@ -1,0 +1,57 @@
+div {
+    border :  solid 1px;
+    border-color: solid blue;
+    
+
+    
+}
+body {
+    color: white;
+    background: linear-gradient(green, red);
+}
+.container {
+    display: flex; /* fica um do lado da outra */
+    justify-content: space-between; /* coloca um espaço entre os elementos*/
+    
+}
+.box {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 8px;
+    
+}
+.box1 {
+    background-color: blue;
+    position: relative;
+    left: 500px;
+    top: 0px;
+}
+
+.box2   {
+    background-color:  purple;
+    position: absolute;
+    top: 0px;
+    left: 500px;
+
+}
+.box3 {
+    background-color: green;
+    position: fixed;
+}
+h1 {
+    font-family:  serif;
+}
+
+
+/* 
+SHORTHAND
+!important muda a preferência de cascata
+@import incluir texto externpo do CSS
+@media = regras adicionais para dispositivo
+@front-face= fontes externas
+@keyframes = Animações
+relative/ absolute : top / right/ left / bottom / z-index
+fixed : faz o elemento ficar fixo na página mas o meu n ta funcionando xD
+z-index: muda a camada que a classe se encontra
+
+*/ 
