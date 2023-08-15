@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/age-calculator-app-main/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+ 
+</head>
+<body>
+
+<main>
+ <div class="content">
+  <form action="">
+    <fieldset>
+      
+        <label for="form" class="day"> day </label>
+        <label for="form"class="month"> month </label>
+        <label for="form" class="year"> year </label>
+        <br>
+  
+      
+        <input type="text" maxlength="2" placeholder="MM" autofocus  class="dayI">
+        <input type="text" placeholder="DD" required maxlength="2" class="monthI">
+        <input type="text" placeholder="YYYY" maxlength="4" class="yearI">
+      
+        
+    </fieldset>
+    <button onclick="caculation()">✓</button>
+   </form>
+   
+    <div class="result">
+      <div ><span class="resultadoY">--</span> years</div>
+      <div ><span class="resultadoM">--</span> months</div>
+      <div ><span class="resultadoD">--</span> days</div>
+    </div>
+    
+ </div>
+</main>
+ 
+  <script src="/age-calculator-app-main/javaAGE.js">
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,352 @@
+body {
+    background-color: red;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+div {
+    text-align: center;
+    padding: 10px;
+    border-bottom: solid blue;
+    text-transform:lowercase;
+    line-height: 10px;
+    
+ }
+
+ a:hover {
+   text-decoration: none;
+    color: black;
+    background-color: aqua;
+    
+ }
+ button {
+    border-radius: 10px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+ }
+ .boxmodel {
+  height: 500px;
+  width: 500px;
+  border: solid 1px white;
+  margin-left: 50%;
+ 
+ }
+ label {
+    display: block;
+ }
+ .container {
+    display: flex;
+   justify-content: space-evenly;
+    border: 1px solid black;
+    
+ }
+ .item {
+    border  : 1px solid black;
+    margin: 0;
+ }
+ .hoover {
+    background-color: skyblue;
+    height:200px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    
+ }
+ .hoover:hover {
+    transition-property: background-color, width, height;
+    transition-duration: 2s, 0.3s, 0.3s;
+    background-color: blueviolet;
+    width: 220px;
+    height: 220px;
+ }
+ /* Você pdoe colocar alguma elemento fixo:
+ .alguem-elemento {
+   position :fixed;
+   top: 0;
+   left:0;
+ }
+  Você também pode selecionar apenas um pseudo elemento de uma classe ou uma letra de qualquer classe
+  basta colocar 
+  .classe : tag : first-child {
+
+  }
+  ex : classe : p : first child
+  ou letra 
+  .classe ::first-letter {
+
+  }
+   REGRA DE ESPECIFÍDADE:
+  A CLASSE SEMPRE SOBREPOE A TAG
+  ##IMPORTANT##
+  Ignora os outros elementos ja atribuídos anteriormente e adiciona um novo
+  ex: .class {
+   color : blue !important;
+  }
+  /* 
+SHORTHAND
+!important muda a preferência de cascata
+@import incluir texto externpo do CSS
+@media = regras adicionais para dispositivo
+@front-face= fontes externas
+@keyframes = Animações
+relative/ absolute : top / right/ left / bottom / z-index
+fixed : faz o elemento ficar fixo na página mas o meu n ta funcionando xD
+z-index: muda a camada que a classe se encontra
+
+----> BOX MODEL <----
+São caixas 2D (2 dimensões);
+Tamanho é definido pela altura(height) e largura(width);
+Margin: é o espaço fora da caixa.
+Border: é a borda da caixa, o contorno.
+Padding: preenchimento interno.
+
+No Box-sizing: box-content o navegador irá somar o padding mais o a altura ou largara q o usuário colocou
+mais a borda
+Já no Box-sizing: box-model o navegador irá permanecer a largura e altura que foi colocada pelo usuário
+primeiramente mesmo colocando um padding e uma bordar, e irá apenas empurrar o conteudo da forma q foi dese
+jada.
+
+block:Ocupa toda uma linha colocando o proximo elemento a baixo dele. ex: div , p, main, section, todos 
+os headings, h1,h2.... OBS: blocks respeitam o height e width.
+inline: o conteúdo continua na mesma linha. ex: a, span, strong, em. OBS:O conteúdo não respeitar o height
+e width
+MASSS você pode mudar o comportamento pradão de um tag block ou inline com o comando display: block ou inline
+
+margin-top, right, bottom, left.
+margin: 0px 0px 0px 0px.
+
+---> PAGES LAYOUTS <---
+
+O padrão de qualquer elemento é o static seguindo o fluxo normal predefinido pelo html ou navegador.
+Position: relative / absolute(entra em uma camada a cima da página.) / fixed
+
+display : flex
+flex-direction: column or row( faz com que elementos dentro de um elemento pai fiquem um do lado do outro
+ou na mesma coluna, depende do comando.
+justify-content: space-between (vai colocar um espaço entre os elementos) /center
+
+Grid: Ocupa lugares na tabela
+display: grid
+exemplo de grid:
+<body>
+   
+        <header >Header</header>
+        <main >Main</main>
+        <aside >Infos</aside>
+        <footer>End</footer> 
+      
+    
+</body>
+</html>
+css:
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 30px 1fr 40px;
+    grid-template-columns: 1fr 80px;
+   
+}
+
+header {
+    grid-area: header;
+    background-color: green;
+
+}
+main {
+    background-color: red;
+}
+aside {
+    background-color: blue;
+
+}
+footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+
+--> FONTES<--
+Font-family : é a fonte do texto, tipo arial, times new roman e etc
+font-weight: normal/ bold/ lighter/ númericos ex: 100, 200 e dependendo da fonte não terá acesso a vários
+tipo de pesos apenas o bold, o lighter e o normal.
+font-style: normal/ oblique, italic.
+font-size: tamanho da fonte.
+
+font-variant:small-caps;
+font-stretch: expanded, normal, condensed
+letter-spacing: 10px;
+line-height:1.6;
+text-transform: lowercase, uppercase, Capitalize
+text-decoration:underline, overline, linethrough, wavy, dashed, dotted, solid, yellow/red/blue...
+text-align:justify, right, left, bottom, top
+text-shadow: 1px 1px 8px red;
+
+
+serif: é uma fonte q tem dobrinhas
+sans: sao fontes mais retas, sem dobrinhas
+
+shorthand da font:
+font : italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+
+display: flex;
+flex-direction: column/ column-reverse / row / row-reverse;
+justify-content: flex-end;
+
+
+normal-flow: maneira como os elementos block e inline se comportam
+float: right or left;
+
+Terminologia:
+-Axis: main(start, end)
+       cross (start, end)
+
+flex-wrap: wrap / wrap-reverse; (cria novas linhas dentro de um elementro block somente se for necessário)
+flex-flow: column wrap; (é o flex wrap e direction juntos) 
+
+justify-content: flex-start(é o padrão, onde todos começam do inicio) / flex-end (ficam todos no final)
+/ center (todos ficam agrupados no centro) / space-between ( faz espaço ao redor os elementos) / space-around (faz espaço entre os elementos)
+ / space-evenly (todos os espços são iguais) 
+
+ align-items: flex-start / flex-end / center / stretch
+
+ gap : 1px (coloca espaço entre os elementos)
+
+ flex-basis: pega as larguras flexíveis.
+ nth-child(1) ( captura o filho de alguma tag que você queria)
+ flex-grow: 1 / 2 ( ocupa o espaço vazio)
+ 
+ 
+ faz o janela fica centralizada sem levar em conta o tamanho da janela :
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+Linear gradient:
+angle
+color
+transition
+syntax
+*pode colocar porcentagem para determinar quanto a cor vai ocupar na página: ex :
+ background-image: linear-gradient(red 75%, blue );
+*pode colocar um angulho em que vai começar o degrade ex : 
+ background-image: linear-gradient( 100deg, red 75%, blue );
+
+ colocando gradient em texto:
+ h1  {
+    background-image: linear-gradient(50deg, blue, green, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    
+}
+
+@media cares: tem a funcionalidade para deixar o site responsivo
+ex: @media screen and (max-width: 768(tablet) {
+    body {
+        background-color: red
+    }
+}
+@media screen and (max-width: 600px (celular) {
+    body {
+        background-color: blue
+    }
+}
+
+
+estudar keyframes animation
+
+efeito hover q botão se mexe 
+.button {
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translate(3px, -3px);
+}
+
+css transition and animation:
+transition-propety/ transition-duration
+.hoover {
+    background-color: skyblue;
+    height:200px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 2s;
+    
+ }
+ .hoover:hover {
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: blueviolet;
+ }
+
+
+ transition-time-function: ease: começo vai rápido depois fica devegar
+ transition-time-function: linear : msm velocidade a transição inteira
+ transition-time-function: ease-in: inicio lento depois o final é rapido
+ transition-time-function: ease-out : começo fica lento e final um pouquinho mais q a ease-in
+ transition-time-function: ease-in-out: bem parecido coms ease-in e out
+ transition-time-function : cubic-bezier()
+
+ transition-delay:4s
+
+ transition: transform 0.1s ease
+
+ transform: translate(10px, -10px)
+
+ css animation:
+ @keyframes test {
+
+ }
+ propriedades: 
+ from
+ to
+ @keyframes fromTo {
+    from {
+        background-color:red
+    }
+    to {
+        background-color:blue
+    }
+}
+ %
+ @keyframes percent {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+ }
+
+ para a animação funcionar tem que colocar a propriedade no elemento que você quer animar ex:
+button {
+    animation: fromTo(nome da animação) 1s(duration) linear(velocidade), infinite(deixa a animação infinita)
+
+animation-duration, animation-name, animation-delay, animation iteretion-count: inifinite / 2
+animation-direction: reverse/alternate/alternate-reverse
+
+animation-time-function: msm que o transition: ease, linear, ease-in, ease-out
+animation-fill-mode:forwards(para no to), backwards(começa com os valores do from msm com delay)
+both(faz o que o forwards e backwards faz, faz AMBOS)
+

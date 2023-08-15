@@ -1,18 +1,37 @@
 import discord
 from discord.ext import commands
-bot = commands.Bot("!")
 
+# Configuração inicial
+TOKEN = 'OTU2NTk2NzQ1NzIxMjQ1NzY2.Gk_eZI.mWUnAwZ4Kcv3pfwbu_ruOCUa_jmJOGG6rsUsQI'  # Substitua pelo seu token
+prefixo = '!'  # Prefixo para os comandos do bot
+
+# Definição dos intents
+intents = discord.Intents.default()
+intents.typing = False
+intents.presences = False
+
+# Criação do objeto bot com intents
+bot = commands.Bot(command_prefix=prefixo, intents=intents)
+
+# Evento de inicialização
 @bot.event
 async def on_ready():
-    print(f"CHEGUEI COMO")
+    print(f'Bot conectado como {bot.user.name}')
 
-@bot.command(name="oi")
-async def send_hi(ctx):
-    name = ctx.author.name
+# Comando !hello
+@bot.command()
+async def hello(ctx):
+    await ctx.send(f'Olá, {ctx.author.mention}!')
 
-    response = "Olá, " + name
-    await ctx.send(response)
+# Comando !ping
+@bot.command()
+async def ping(ctx):
+    await ctx.send('Pong!')
 
+# Comando !oi
+@bot.command()
+async def oi(ctx):
+    await ctx.send('Olá, senhor!')
 
-
-bot.run("OTU2NTk2NzQ1NzIxMjQ1NzY2.YjyiJA.PfJXB_WFo2xYZWo-dis--x_24Xw")
+# Execução do bot
+bot.run(TOKEN)

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+        .game-board {
+            background-color: rgb(26, 173, 218);
+            height: 500px;
+            width: 80%;
+            border : 1px solid black;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+        .pipe {
+            position: absolute;
+            bottom: 0;
+            width: 100px;
+            right: -80px;
+            animation: pipe-animation 2s infinite linear ;
+            
+        }
+        @keyframes pipe-animation {
+            from {
+                right: -80px;
+            }
+            to {
+                right: 100%;
+            }
+        }
+        .mario {
+            width: 150px;
+            position: absolute;
+            bottom: 0;
+            
+        }
+        .jump {
+            animation: jump-animation 1s linear ;
+        }
+        @keyframes jump-animation {
+            0% {
+                bottom: 0;
+            }
+            40% {
+                bottom: 230px;
+            }
+            50% {
+                bottom: 220px;
+            }
+            60% {
+                bottom: 200px;
+            }
+            100% {
+                bottom: 0;
+            }
+        }  
+    </style>
+    
+    <main class="game-board">
+        <img src="/HTML/IMG/pipe.png" class="pipe">
+        <img  src="/HTML/IMG/mario.gif" class="mario">
+
+    </main>
+</body>
+<script >
+    const mario = document.querySelector('.mario');
+const jump = () =>{
+mario.classList.add('jump')
+setTimeout(() => {
+    mario.classList.remove('jump')
+}, 1000)
+}
+
+document.addEventListener('keydown', jump);
+</script>
+</html>

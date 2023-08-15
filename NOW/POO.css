@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: deepskyblue;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+    
+}
+main {
+    border: 1px solid #ccc;
+    margin: auto;
+    width: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+h2 {
+    text-align: center;
+}
+.create-product {
+    padding: 10px;
+}
+.lineinput {
+    display: grid;
+    margin-bottom: 20px;
+}
+input {
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #ccc
+}
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 10px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 95%;
+    margin: 10px;
+    text-align: center;
+}
+table th {
+    background-color: #ccc;
+    
+}
+.colors {
+    height: 100px;
+    width: 400px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin: 20PX;
+    text-align: center;
+}
+.red {
+    background-color: crimson;
+}
+.green {
+    background-color: greenyellow;
+}
+.blue {
+    background-color: blueviolet;
+}
+.customButton {
+    margin-left: 215px;
+}
