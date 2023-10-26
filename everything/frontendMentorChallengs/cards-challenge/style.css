@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    
+}
+body {
+  background-color: #20212c;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 110px;
+  margin-bottom: 10%;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  color: #e0aaff;
+}
+button:hover{
+  transform: translate(3px, -3px);
+}
+.mainCardBoard {
+  background-color: #2b2c37;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px #383a47 ;
+  margin-right: 10px;
+  
+}
+
+.task {
+  color: #6561c8;
+  margin-bottom: 15px;
+  
+}
+h3 {
+  margin-bottom: 20px;
+  
+}
+.taskCreate {
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  color: #6561c8;
+  margin: 10px;
+}
+
+.xis {
+  height: 20px;
+  cursor: pointer;
+}
+.headerCard {
+  display: flex;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6561c8;
+  border-radius: 10px;
+  
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6461c8c5;
+}
+
+.deleteTask {
+  margin-right: 5px;
+  color: black;
+}
+.taskContent {
+  justify-content: space-between;
+}
+/* JS */
+
+.modalOverlay {
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.WindowInput {
+    background-color: #2b2c37;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 20%;
+    z-index: 9999;
+    position: fixed;
+    border-radius: 10px;
+}
+.inputCreateCard{
+  border-radius: 5px;
+  width: 70%;
+  border: none;
+  padding: 10px;
+  color: black;
+  
+}
+.headerInput{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.inputContent {
+  margin: 40px;
+}
+
+/* otherCard */
+
+.headerOtherCard{
+  display: flex;
+  justify-content: space-between;
+}
+.otherCardBoard {
+  color:#2b2c37 ;
+  background-color:#2b2c37 ;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 0px #282a33 ;
+  margin-right: 10px;
+  
+  
+}
+.closingAnimation {
+  animation: test 1s linear;
+  box-shadow: none;
+}
+@keyframes test{
+  from{
+    background-color: #2b2c37;
+    opacity: 1;
+    transform: scale(1);
+    
+  }
+  to{
+    background-color: transparent;
+    opacity: 0;
+    transform: scale(0);
+  }
+}

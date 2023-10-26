@@ -1,76 +1,90 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
-header {
-    background-color: deepskyblue;
-    text-align: center;
-    padding: 20px;
-    color: aliceblue;
+body {
+    background-image: linear-gradient(75deg, #386641, #6a994e, #a7c957);
+    height: 100vh;
+    color: #bc4749;;
+}
+
+.main-box {
+   background-color: #f2e8cf;
+   padding: 10px;
+   width: 500px;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 20px;
     
-}
-main {
-    border: 1px solid #ccc;
-    margin: auto;
-    width: 500px;
-    margin-top: 50px;
-    border-radius: 10px;
-}
-h2 {
-    text-align: center;
-}
-.create-product {
-    padding: 10px;
-}
-.lineinput {
-    display: grid;
-    margin-bottom: 20px;
-}
-input {
-    outline: 0;
-    padding: 10px;
-    border: 1px solid #ccc
+   
 }
 button {
-    cursor: pointer;
-    padding: 10px;
+    background-color: #bc4749;
+    color: #f2e8cf;
     border: none;
-    background-color: deepskyblue;
-    color: white;
+    padding: 20px;
+    width: 300px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+    font-size: 20px;
 }
-table {
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    width: 95%;
-    margin: 10px;
-    text-align: center;
+button:hover {
+    transform: translate(3px, -3px);
+    background-color: #bc4749c0;
 }
-table th {
-    background-color: #ccc;
+
+input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.733);
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+}
+.inputDiv{
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+}
+.enviar {
+    height: 50px !important;
+    font-size: 16px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #6a994e;
+    color: #f2e8cf;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
     
 }
-.colors {
-    height: 100px;
-    width: 400px;
-    border-radius: 10px;
-    border: none;
-    color: white;
-    padding: 10px;
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CustomCheckbox {
+    height: 30px;
+    margin-right: -80px;
     cursor: pointer;
-    margin: 20PX;
-    text-align: center;
 }
-.red {
-    background-color: crimson;
-}
-.green {
-    background-color: greenyellow;
-}
-.blue {
-    background-color: blueviolet;
-}
-.customButton {
-    margin-left: 215px;
+.search {
+    margin-bottom: 10px;
 }

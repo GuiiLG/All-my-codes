@@ -7,11 +7,11 @@ addCart.addEventListener('click', ()=>{
     console.log('ola')
 })
 mainImage.addEventListener('click', ()=>{
-    body.classList.add('bodyOpacity')
+    let div_Modal_Overlay = document.createElement('div')
+    div_Modal_Overlay.setAttribute('class', 'modal-overlay')
+    body.appendChild(div_Modal_Overlay)
 
-    product_Open.style.backgroundImage = `url(images/image-product-1.jpg)`;
-    let product_Open = document.createElement('div')
-    product_Open.classList.add('product_Open')
-    document.main.appendChild(product_Open)
-    
+    let img = document.createElement('img')
+    img.src = 'everything/frontendMentorChallengs/cards-challenge/1976055_edit_edit document_edit file_edited_editing_icon.png'
+    div_Modal_Overlay.appendChild(img)
 })

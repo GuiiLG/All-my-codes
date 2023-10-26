@@ -1,0 +1,36 @@
+.iMovi {
+    height: 70px;
+}
+.iMovidiv {
+    display: flex !important;
+}
+.liItens {
+    margin-left: 200px;
+    font-size: 20px;
+}
+main {
+    margin-top: 300px !important;
+    margin-bottom: 300px;
+}
+.buttonSeeMore{
+    padding-bottom: 200px !important;
+    
+}
+.card1 {
+    top:0;
+    left: 10%;
+}
+.card2 {
+    top: 0;
+    left: 50%;
+}
+.card3{
+    left: 90%;
+}
+.imgInfos {
+    height: 80px;
+}
+.infoButton {
+    background-color: black !important;
+
+}

@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <form action="dataCardsEdit" method="POST">
+        <input type="hidden" name="id" value="{{card._id}}">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Edit card's name</label>
+            <input required name="title" type="title" class="form-control" value="{{card.title}}">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Edit text</label>
+            <input required name="text" type="text" class="form-control" value="{{card.text}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 5%, 92%);
+}
+main {
+    width: 80%;
+    margin-top: 10% !important;
+    border: 1px solid red;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "div1 div1 div2 div3"
+    "div4 div5 div5 div3"
+    
+    ;
+   
+
+    gap: 15px;
+}
+div {
+    border-radius: 10px;
+    padding: 15px;
+}
+.div1 {
+    grid-area: div1;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+.div2{
+    grid-area: div2;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.div3 {
+    grid-area: div3;
+    background-color: white;
+    color: black;
+}
+.div4 {
+    grid-area: div4;
+    background-color: white;
+    color: black;
+}
+.div5 {
+    grid-area: div5;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    
+}

@@ -82,16 +82,20 @@ const animals= [
 ]
 console.log(`The zoo has a ${animals[0]}`)
 
+
 Array com construtor:
 let myArray = new Array ('a', 'b', 'c')
 let myArray = new Array (10)
 array.push('')-> coloca elementos no final do array
 array.unshift('sql')->coloca elementos no começo do array
 array.pop()-> remove o elemento final
+array.unshift()-> add in the first
 techs.shift() -> remove do começo
 array.slice(1,1) ->  pega somente uns elementos do array
 array.splice(1(posição),1(quantos))
 array.indexOf('') -> qual o index de um elemento do array
+
+Matrix: Array inside another array
 
 -->FUCTIONS<--
 function sla() {
@@ -294,6 +298,19 @@ div = [...div]
 div.map((el)=>{
     console.log(el.innerHTML)
 })
+outro exemplo:
+colorsDOM.map((el)=>{ // creating the painteds buttons
+    let divCOLORS =document.createElement('div')
+    divCOLORS.setAttribute('class', 'colors')
+    divCOLORS.classList.add('class', el)
+    divCOLORS.innerHTML= el
+    div.appendChild(divCOLORS)
+    divCOLORS.addEventListener('click', (evt)=>{
+        div.removeChild(evt.target)
+        
+        
+})
+
 OBS: o primeiro parametro da função é os elementos do array e o segundo é a posição do array
 Conclusão: o map vai ser utilizado quando você quiser pecorrer por todos os elementos do array, diferentemente do for
 que pode ser usado assim mais é aconselhável usa-lo quando tiver a intenção de parar no meio e n pecorrer por todos
@@ -362,6 +379,12 @@ for (let property in person) {
     console.log (person[0])
 }
 
+forEach: allows you put a specfic method and run for each element in an array and also a map colection
+
+forEach()
+mapa.forEach(el){
+  console.log(el)
+}
 
 while:
 let i = 0
@@ -555,7 +578,7 @@ mudar o estilo em javascript:
 
 </script>
 
-A propriedade classList tem vários métodos, como add(), remove(), toggle(se a classe não existir ele adiciona se n
+A propriedade classList tem vários métodos, como add(), remove(), toggle(se a classe não existir ele adiciona se 
   existir ele tira ) e contains()
 
 adiciona uma nova classe:
@@ -574,6 +597,7 @@ const element = (document.querySelector('body'))
   element.classList.add('desactive');
 
 </script>
+element.classList.toggle()
 
 firstChild:
 
@@ -782,6 +806,460 @@ function ola(){
   }
 
  }
+
+ CFBCURSOS:
+Iteradores:
+Array
+String
+Map
+Sets
+
+navigator.clipboard.read()-> copy the text to the user
+
+const array = [2, 4 ,8 ,10]
+const iterator = array[Symbol.iterator]()
+
+console.log(iterator.next())
+
+other example:
+
+const array = [2, 4 ,8 ,10]
+const iterator = array[Symbol.iterator]()
+let change = 0
+
+if(iterator.next().done == false){
+    console.log(iterator.next().value)
+    console.log(iterator.next().value)
+    console.log(iterator.next().value)
+    console.log(iterator.next().value)
+}
+else {
+
+}
+
+
+ propriedades----------------------------------------------------------------------------------------
+ .target : o navegador seleciona qm foi alvo desse evento, por exemplo se o botão foi clicado e ele foi alvo do evento
+ click
+
+ métodos----------------------------------------------------------------------------------------------------
+ remove.child(), remove o filho do elemento
+remove(), remove o elemento em si
+
+ FILTER:
+ FILTER ele é um método parecido com o map, no qual ele passa por todos os elementos de um array e FILTRA de acordo com 
+ a expecificação do usuário. 
+ ex:
+ const idade = ["18", "50","12", "15","20"]
+  let maiorDeIdade = idade.filter((valor)=>{
+    if (valor >= 18){
+      return valor
+    }
+ })
+ console.log(maiorDeIdade)
+ console.log(idade)
+++++++++++++++++++++++++++++++++
+
+parentElement.InsertBefore('elementYouWantInsert','referenceElement')-> in this case will be insert before the element 
+referenced::
+let create = document.createElement('div')
+   create.innerHTML = 'ola mundo'
+   let main = document.querySelector('.box-container')
+   let p = document.querySelector('p')
+   main.insertBefore(create, p)
++++++++++++++++++++++++++
+FIND: Search in an array one element specified by the user but just one. If find it returns true if dont return undefined
+PS: Its very useful searching in data structure
+ex:
+let searchInput = document.querySelector('.search'); // Match your input's class
+let array = [10, 15, 20, 25];
+const submit = document.querySelector('.enviar');
+
+submit.addEventListener('click', (evt) => {
+    let searchValue = parseInt(searchInput.value); // Convert input value to a number
+
+    let foundElement = array.find((el) => {
+        return el === searchValue;
+    });
+
+    if (foundElement !== undefined) {
+        console.log(`Found element: ${foundElement}`);
+    } else {
+        console.log(`Element ${searchValue} not found in the array.`);
+    }
+});
+other ex:
+let array = [5, 15, 20, 25, 30]
+let search = array.find((el)=>{
+    return el === 31
+})
+console.log(search)
+++++++++++++++++++++++
+
+EVERY:
+Every checks if in the array  met a  specif conditions,  if its return true  if it isnt
+return false
+ex: let array = [16, 20, 21 , 30 , 40 ]
+
+    let check = array.every((el)=>{
+        
+            return el >= 18
+        
+    })
+console.log(check)
+
+other example:
+let array = [15, 20 , 30, 10, 5 , 40 ,50]
+
+let every = array.every((el)=>{
+    return el%5 == 0 
+})
+console.log(every)
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SOME:
+If only one of the elements that were checked in a specific conditions the method returns true
+let array = [15, 21 , 30, 10, 5 , 40 ,50]
+
+let every = array.some((el)=>{
+    return el%5 != 0 
+})
+console.log(every)
+
+REDUCE: Basically does a sum or whatever you want between the array numbers:
+let array = [5,5 ,5 ,5,5 ,5]
+
+let every = array.reduce((first, second)=>{
+    return first+second 
+})
+console.log(every)
+   
+
+Colections------------------------------------------------------------------------------------------------------
+
+Array code:
+let operations = [
+    (number1, number2)=>{
+        return number1 + number2
+    },
+    (number1, number2)=>{
+        return number1 - number2
+    },
+    (number1, number2)=>{
+        return number1 * number2
+    },
+    (number1, number2)=>{
+        return number1 / number2
+    },
+    
+]
+
+let submit = document.querySelector('.enviar')
+let calculator = document.querySelector('.calculator')
+
+
+
+function operator(sinal){
+    let inputOne = parseFloat(document.querySelector('.number1').value)
+    let inputTwo = parseFloat(document.querySelector('.number2').value)
+    let result = 0
+    if (sinal == '+'){
+        result = operations[0](inputOne, inputTwo)
+    }
+    else if (sinal == '-'){
+        result = operations[1](inputOne, inputTwo)
+    }
+    else if (sinal == '*'){
+        result = operations[2](inputOne, inputTwo)
+    }
+    else if (sinal == '/'){
+        result = operations[3](inputOne, inputTwo)
+    }
+    calculator.innerHTML = result
+    
+}
+
+// CSS:
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body {
+    background-image: linear-gradient(75deg, #386641, #6a994e, #a7c957);
+    height: 100vh;
+    color: #bc4749;;
+}
+
+.main-box {
+   background-color: #f2e8cf;
+   padding: 10px;
+   width: 800px;
+   border-radius: 10px;
+   margin: auto;
+   margin-top: 20px;
+    
+   
+}
+button {
+    background-color: #bc4749;
+    color: #f2e8cf;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+    font-size: 20px;
+}
+button:hover {
+    transform: translate(3px, -3px);
+    background-color: #bc4749c0;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.733);
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+}
+.inputDiv{
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+}
+.enviar {
+    height: 50px !important;
+    font-size: 16px;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.box {
+    background-color: #6a994e;
+    color: #f2e8cf;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease ;
+    font-size: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CustomCheckbox {
+    height: 30px;
+    margin-right: -80px;
+    cursor: pointer;
+}
+.search {
+    margin-bottom: 10px;
+}
+
+// HTML :
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <title>Document</title>
+//     <link rel="stylesheet" href="/NOW/POO.css">
+// </head>
+// <body>
+//     <header>
+        
+//     </header>
+    
+//     <div class="main-box">
+//         <div class="inputDiv">
+//             <label for="">Calculator</label>
+//             <input type="text" class="number1 search"> 
+//             <input type="text" class="number2 search">
+//             <div class="calculator">RESULT</div>
+//             <button class="plus enviar" type="submit" onclick="operator('+')">+</button>
+//             <button class="minus enviar" type="submit" onclick="operator('-')">-</button>
+//             <button class="divide enviar" type="submit" onclick="operator('/')">/</button>
+//             <button class="multiple enviar" type="submit" onclick="operator('*')">*</button>
+//         </div>
+//         <div class="box-container">
+            
+            
+//         </div>
+//     </div>
+            
+other way to do::
+document.addEventListener("DOMContentLoaded", () => {
+    let plus = document.querySelector('.plus');
+    let minus = document.querySelector('.minus');
+    let divide = document.querySelector('.divide');
+    let multiple = document.querySelector('.multiple');
+    let calculator = document.querySelector('.calculator');
+
+    let operations = [
+        (number1, number2) => {
+            return number1 + number2;
+        },
+        (number1, number2) => {
+            return number1 - number2;
+        },
+        (number1, number2) => {
+            return number1 * number2;
+        },
+        (number1, number2) => {
+            return number1 / number2;
+        },
+    ];
+
+    plus.addEventListener('click', () => operator('+'));
+    minus.addEventListener('click', () => operator('-'));
+    divide.addEventListener('click', () => operator('/'));
+    multiple.addEventListener('click', () => operator('*'));
+
+    function operator(sinal) {
+        let inputOne = parseFloat(document.querySelector('.number1').value);
+        let inputTwo = parseFloat(document.querySelector('.number2').value);
+        let result = 0;
+        if (sinal == '+') {
+            result = operations[0](inputOne, inputTwo);
+        } else if (sinal == '-') {
+            result = operations[1](inputOne, inputTwo);
+        } else if (sinal == '*') {
+            result = operations[2](inputOne, inputTwo);
+        } else if (sinal == '/') {
+            result = operations[3](inputOne, inputTwo);
+        }
+        calculator.innerHTML = result;
+    }
+});
++++++++++++++++++++++++++++++++++++++++++++++
+
+Map(colection):fun fact(dont work with the method map)
+KEY-VALUE
+
+let mapa = new Map()
+mapa.set('curso', 'CSS')
+console.log(mapa.get(1))
+
+.set(add elements to the colection)
+.get(get the elements )
+.has(check if has a element)
+.size(return the colection size) WITHOUT ()
+.key(show the key)
+
+Set(colection) : Its like array but dont accept two equal elements.
+
+let songs = new Set([1, 2, 3 ])
+
+.add(add new elements)
+.add(delete new elements)
+
+--------------------------------------------------------------------------------
+
+OBJECT ORIENTED PROGRAMMING:Its a reasuble code that turns your code more clean
+class Pessoa{
+    constructor(name, age){
+      this.name = name
+      this.age = age
+    }
+    info(){
+        console.log(`Name: ${this.name} / Age:${this.age}`)
+    } 
+
+  }
+  let p1 = new Pessoa('Bruno', 20)
+  let p2 = new Pessoa('Isaac',30)
+  let p3 = new Pessoa('José',40)
+
+    
+  p1.info()
+  p2.info()
+  p3.info()
+
+
+  Inheritance: 
+  Class Doctor extends Pessoa { --> the Class doctor will receive all the proprietaries from Pessoa now and can also
+    add more proprietaries:
+
+    constructor(){
+      super()--> call the constructor from the parent 
+    }    
+
+  }
+
+  Static:
+  
+
+  Prototype: Add a prototype into the class outiside
+
+  CLassName.prototype.prototypeName = 'something'
+
+
+  Promises: It's a promise that always return a response, even if the code ended
+ let promise = new Promise((resolve, reject)=>{
+  let result= true
+  setTimeout(()=>{
+    if (result){
+      resolve('certo')
+    }
+    else {
+      reject('errado')
+    }
+  }, 3000)
+})
+promise.then((retorno)=>{
+  console.log(retorno)
+})
+promise.catch((retorno)=>{
+  console.log(retorno)
+})
+console.log('loading')
+
+
+=====================================================================================
+Date and Hour:
+let date = new Date()
+
+  API:
+  const express = require('express')
+  const app = express()
+
+  app.listen('3000')
+
+  app.route('/').get(  (req, res)=> res.send('hello world')  )
+
+===============================================================
+Math: A library with a lot math methods
+random
+floor
+sqrt
+cos
+round
+pow
+
+
+Redirect in js:
+window.location='path'
+.replace= remove the old url from the hystory
+assign = do the same thing replace does but dont remove the old url from the history
+.reload = reload the page
+  
 */
 
 

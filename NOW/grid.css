@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    
+    margin: auto;
+    width: 75%;
+    display: grid;  
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)) ;
+    grid-template-rows: ;
+    gap: 10px;
+}
+div {
+    word-wrap: break-word;
+    
+    
+}
+.div1 {
+    background-color: red;
+    padding: 50px;
+    
+    
+    
+}
+.div2 {
+    background-color: blueviolet;
+    padding: 50px;
+    
+}
+.div3{
+    background-color: aqua;
+    padding: 50px;
+    
+}
+.div4 {
+    background-color: chartreuse;
+    padding: 50px;
+}

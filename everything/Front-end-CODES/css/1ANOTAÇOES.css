@@ -350,3 +350,22 @@ animation-time-function: msm que o transition: ease, linear, ease-in, ease-out
 animation-fill-mode:forwards(para no to), backwards(começa com os valores do from msm com delay)
 both(faz o que o forwards e backwards faz, faz AMBOS)
 
+CSS grid:
+display grid!!
+grid-template-colummns: 1fr, minmax(30px, 1fr), (tell the quantity of columns)
+grid-template-rows: 5fr, repeat(autofit, 1fr)  (tell the quantity of rows)
+
+grid-row/column-start/end: 1 ( tell when an element start and end
+
+gap syntaxes :
+grid-gap/ gap : 30px(margin between the elements, in this case 30px)
+row-gap
+column-gap
+
+minmax:(set a min and a max size for the fr )
+minmax(200px, 1fr)
+repeat(auto-fit, minmax(200px, 1fr)
+
+BootStrap :
+
+
